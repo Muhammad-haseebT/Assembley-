@@ -1,0 +1,13 @@
+.MODEL SMALL
+.STACK 100H
+.CODE
+MAIN PROC    
+    CALL DECIN 
+    CALL NEWL
+    CALL DECOUT
+       
+    MOV AH, 4CH
+    INT 21H
+    MAIN ENDP 
+INCLUDE C:\Users\user\Desktop\INOUT.ASM    
+END MAIN
